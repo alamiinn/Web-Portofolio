@@ -1,0 +1,212 @@
+/* Hero Section */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,600,700);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&family=Poppins:wght@200;400;500;700&display=swap");
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right center;
+  position: relative;
+}
+.digi-space {
+  width: 90%;
+  font-size: 40px;
+  font-weight: 500;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #6e57e0, #5a43cb);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  font-weight: 700 !important;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 767px) {
+  .col-md-6 {
+    text-align: left;
+  }
+  .digi-space,
+  .dsgn {
+    font-size: 24px; /* Mengurangi ukuran font di mode ponsel */
+    margin-bottom: 10px; /* Memberikan ruang di bawah teks */
+  }
+
+  .socials {
+    text-align: left; /* Mengatur ikon media sosial menjadi di tengah pada mode ponsel */
+    margin-top: 20px; /* Memberikan ruang atas untuk ikon media sosial */
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  .social-icons li {
+    margin: 0 1px; /* Memberikan ruang antara ikon media sosial */
+  }
+
+  .img-fluid {
+    max-width: 100%; /* Gambar akan menyesuaikan lebar layar ponsel */
+    height: auto; /* Menghindari gambar terdistorsi */
+  }
+
+  .bn60 {
+    font-size: 18px; /* Mengurangi ukuran font untuk tombol "About Me" di mode ponsel */
+    display: block; /* Mengatur tombol "About Me" agar tampil di bawah teks */
+    margin-top: 20px; /* Memberikan ruang atas pada tombol "About Me" */
+  }
+}
+
+#project {
+  background-color: #191627;
+}
+#skills {
+  background-color: #191627;
+}
+.bg-co {
+  background-color: #191627;
+}
+.dsgn {
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+}
+/* social icons start */
+.socials {
+  position: relative;
+  margin-top: 1rem;
+}
+.font {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+.nav-item {
+  font-family: "Poppins", sans-serif;
+}
+.socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.social-icons a {
+  font-size: 1.3rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #6e57e0;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+}
+.social-icons a.github:hover {
+  background-color: #0e0e0e;
+}
+.social-icons a.telegram:hover {
+  background-color: #0685da;
+}
+.social-icons a.tiktok:hover {
+  background-color: #0e0e0e;
+}
+.social-icons a.email:hover {
+  background-color: #0e0e0e;
+}
+.social-icons a.whatsapp:hover {
+  background-color: #32cd32;
+}
+.social-icons a.instagram:hover {
+  background-color: #ee00da;
+}
+/* social icons end */
+/* hero media queries starts*/
+@media (max-width: 576px) {
+  .col-sm-2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .col-6 {
+    flex-basis: 50%;
+  }
+  .mt-2 {
+    margin-top: 0 !important;
+  }
+  .carousel-caption {
+    text-align: center;
+    padding-bottom: 10px !important;
+  }
+}
+.nav-link.active {
+  color: #6e57e0 !important;
+  /* font-weight: bold; */
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #6e57e0 !important;
+}
+.bn60 {
+  background-color: #6e57e0;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  position: relative;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 45px;
+  width: 160px;
+  text-decoration: none;
+  margin-top: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.bn60:hover {
+  background-color: #5a43cb;
+  color: white;
+}
+/* Mengatur ukuran slider */
+.carousel {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Mengatur teks caption di tengah */
+.carousel-caption {
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.vm {
+  background-color: #6e57e0 !important;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+.vm:hover {
+  background-color: #5a43cb !important;
+}
+.card {
+  background-color: #191627;
+  color: white;
+}
